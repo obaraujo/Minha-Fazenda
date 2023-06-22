@@ -1,0 +1,16 @@
+
+.content {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(100% - 280px);
+  height: calc(100% - 70px);
+  top: 70px;
+  left: 280px;
+  background-color: rgb(214, 214, 214);
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.5s;
+
+}

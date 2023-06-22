@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Signika;
+    src: url('../_fontes/Signika/Signika-SemiBold.ttf')
+}
+#fundo {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    opacity: 80%;
+    width: 100vw;
+    height: 100vh;
+}
+body {
+    background-color: rgb(255, 235, 223);
+}
+header {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vh;
+    background-color: rgb(255, 136, 0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding-left: 2%;
+    width: 100%;
+    -webkit-text-stroke-width: 0.6px;
+    -webkit-text-stroke-color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.conteiner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.butao{
+    position: relative;
+    z-index: 2;
+     font-family: Signika;
+     font-size: 3vh;
+     width: 45vw;
+     height: 20vh;
+     color: white;
+     background-color: rgb(255, 72, 0);
+     cursor: pointer;
+     border: 0px solid rgb(201, 57, 0);
+     text-shadow: black 1px 1px 4px;
+     box-shadow: black 2px 2px 2px;
+    -webkit-text-stroke-width: 0.2px; /* largura da borda */
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    margin: 1px 1px;
+}
+
+
+ .butao:hover {
+     background-color: rgb(255, 136, 0);
+     box-shadow: black 1px 3px 5px;
+     font-size: 3.5vh;
+     border: 1px solid rgb(211, 144, 0) ;
+     margin: 0px 0px 0px 2px;
+ }

@@ -1,0 +1,110 @@
+@media screen and (max-width: 458px) {
+  * {
+    flex-shrink: 0;
+  }
+  .title-logo, .content {
+    left: 0;
+    width: 100%;
+  }
+  .min-menu {
+    position: fixed;
+    height: 6rem;
+    width: 100%;
+    z-index: 10;
+    top: unset;
+    bottom: 0;
+  }
+  .min-menu .options-menu {
+    overflow-y: unset;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 7rem;
+    height: 6rem;
+    width: 100%;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+display: ruby;
+  }
+  .min-menu .options-menu hr {
+    display: none;
+  }
+  .min-menu .options-menu a {
+    position: relative;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 6rem;
+  }
+  .min-menu .info-producer {
+    display: none;
+  }
+  .min-menu .bar {
+    position: absolute;
+    opacity: 0;
+    height: 1rem;
+    width: 100%;
+    bottom: 0;
+    background-color: #00e00b;
+  }
+  .min-menu .active-option .bar {
+    opacity: 1;
+    width: 6rem;
+    margin: 1rem 0 0 0;
+  }
+  .min-menu .open-menu {
+    display: flex;
+    width: 4rem;
+    height: 6rem;
+  }
+  header.title-logo {
+    left: 0;
+    font-size: 1.5rem;
+  }
+  .content {
+    left: 0;
+    width: 100%;
+  }
+  .widget {
+    margin: 20px;
+  }
+
+  .item {
+    display: none;
+  }
+  .view-mobile {
+    display: block;
+  }
+  .item {
+    max-width: 12.5rem;
+  }
+  .list-item {
+    background-color: #ffffff;
+    box-shadow: 0 0 5px black;
+  }
+  .item-title {
+    height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .financial {
+    grid-template-columns: 1fr;
+  }
+  .presentation {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .field-input {
+    flex: 100%;
+  }
+  .form-register {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .field-input {
+    flex: 20%;
+  }
+}

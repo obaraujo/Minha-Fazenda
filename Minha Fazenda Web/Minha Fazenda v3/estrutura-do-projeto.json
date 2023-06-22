@@ -1,0 +1,197 @@
+{
+	"Produtores": {
+		"id": {
+			"Nome": "",
+			"DataNascimento": "",
+			"Sexo": "",
+			"Senha": "",
+			"ImagemPerfil": "",
+			"Propriedades": {
+				"id": {
+					"Nome": "",
+					"Localização": {
+						"Cidade": "",
+						"Estado": "",
+						"CoordenadasGeograficas": ""
+					},
+					"Tamanho": {
+						"Largura": "",
+						"Comprimento": "",
+						"Hectares": ""
+					},
+					"ValorPago": "",
+					"Anotacoes": "",
+					"Plantacoes": {
+						"id": "nome"
+					},
+					"Pessoas": {
+						"id": "nome"
+					}
+				}
+			},
+			"Plantacoes": {
+				"id": {
+					"Nome": "",
+					"Propriedade": "",
+					"Trabalhadores": [],
+					"ValoresGastos": {
+						"id": {
+							"Data": "",
+							"Descricao": "",
+							"Imagens": []
+						}
+					},
+					"Cultura": {
+						"Nome": "",
+						"ComprimentoLeiras": "",
+						"EspacamentoLeiras": "",
+						"EspacamentoPlantas": "",
+						"Anotacoes": "",
+						"Imagens": []
+					},
+					"Eventos": {
+						"id": {
+							"Data": "",
+							"Descricao": "",
+							"Imagens": []
+						}
+					},
+					"Colheitas": {
+						"id": {
+							"Data": "",
+							"ValorGanho": "",
+							"Imagens": []
+						}
+					},
+					"AreaUsada": {
+						"Comprimento": "",
+						"Largura": ""
+					}
+				}
+			},
+			"Animais": {
+				"id": {
+					"Nome": "",
+					"Pai": "",
+					"Mae": "",
+					"Tipo": "",
+					"Raca": "",
+					"Sexo": "",
+					"Eventos": {
+						"id": {
+							"Data": "",
+							"Descricao": "",
+							"Imagens": []
+						}
+					},
+					"Gastos": {
+						"id": {
+							"Data": "",
+							"Descricao": "",
+							"Imagens": []
+						}
+					},
+					"Anotacoes": ""
+				}
+			},
+			"Compras": {
+				"id": {
+					"Data": "",
+					"Descricao": "",
+					"Valor": "",
+					"Imagens": []
+				}
+			},
+			"Pessoas": {
+				"id": {
+					"Nome": "",
+					"Senha": "",
+					"ImagemPerfil": "",
+					"DataNascimento": "",
+					"Sexo": "",
+					"Parentesco": "",
+					"Eventos": {
+						"id": {
+							"Data": "",
+							"Descricao": "",
+							"Imagens": []
+						}
+					},
+					"Plantacoes": {
+						"id": {
+							"Nome": "",
+							"Propriedade": "",
+							"Trabalhadores": [],
+							"ValoresGastos": {
+								"id": {
+									"Data": "",
+									"Descricao": "",
+									"Imagens": []
+								}
+							},
+							"Cultura": {
+								"Nome": "",
+								"ComprimentoLeiras": "",
+								"EspacamentoLeiras": "",
+								"EspacamentoPlantas": "",
+								"Anotacoes": "",
+								"Imagens": []
+							},
+							"Eventos": {
+								"id": {
+									"Data": "",
+									"Descricao": "",
+									"Imagens": []
+								}
+							},
+							"Colheitas": {
+								"id": {
+									"Data": "",
+									"ValorGanho": "",
+									"Imagens": []
+								}
+							},
+							"AreaUsada": {
+								"Comprimento": "",
+								"Largura": ""
+							}
+						}
+					},
+					"Animais": {
+						"id": {
+							"Nome": "",
+							"Pai": "",
+							"Mae": "",
+							"Tipo": "",
+							"Raca": "",
+							"Sexo": "",
+							"Eventos": {
+								"id": {
+									"Data": "",
+									"Descricao": "",
+									"Imagens": []
+								}
+							}
+						},
+						"Gastos": {
+							"id": {
+								"Data": "",
+								"Descricao": "",
+								"Imagens": []
+							}
+						},
+						"Anotacoes": ""
+					},
+					"Compras": {
+						"id": {
+							"Data": "",
+							"Descricao": "",
+							"Valor": "",
+							"Imagens": []
+						}
+					}
+				}
+			}
+		}
+	}
+}

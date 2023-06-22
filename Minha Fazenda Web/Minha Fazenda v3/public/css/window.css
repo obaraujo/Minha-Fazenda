@@ -1,0 +1,88 @@
+.window {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+    box-sizing: border-box;
+  transition: all 0.5s;
+  z-index: 12;
+}
+
+.content-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000ce;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.alert {
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: [icon_s] 50px [icon_e] 150px [msg];
+  border:  2px solid black;
+}
+
+.alert .icon {
+  grid-column: icon_s / icon_e;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert .menssage {
+  grid-column: icon_e / msg;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+}
+
+.alert .bt-actions {
+  grid-column: icon_s / msg;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.alert .bt-actions buttom {
+  border: none;
+  cursor: pointer;
+}
+
+.alert .cancel {
+  display: inline-block;
+  color: #ff0000;
+  height: 100%;
+}
+
+.alert .confirm {
+  display: inline-block;
+  color: #27c500;
+  height: 100%;
+}
+
+.alert .confirm:hover {
+ color: #46dd20;
+}
+
+.alert .cancel:hover {
+  color: #f51b1b;
+}

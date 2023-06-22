@@ -1,0 +1,31 @@
+{
+	"VINÍCIUS": {
+		"Data_Nascimento": "02/07/2020",
+		"Dados": {
+			"Propriedades": {},
+			"Animais": {
+				"PITÁGORAS": {
+					"Nome": "Pitágoras",
+					"Sexo": "Macho",
+					"Nascimento": "24/07/2020",
+					"NomePai": "lula",
+					"NomeMae": "dalziza"
+				}
+			},
+			"Plantacoes": {}
+		}
+	},
+	"DAI": {
+		"Data_Nascimento": "undefined/undefined/",
+		"Dados": {
+			"Propriedades": {
+				"FAZENDA_ARAUJO": {
+					"Nome": "Fazenda Araujo",
+					"Tamanho": "12Ha"
+				}
+			},
+			"Animais": {},
+			"Plantacoes": {}
+		}
+	}
+}

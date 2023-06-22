@@ -1,0 +1,108 @@
+<form action="/cadastro-plantacao" method="post">
+  <section class="info-obt">
+    <section class="nome">
+      <label for="nome">Nome</label> <br>
+      <input type="text" name="nome" id="nome" placeholder="Nome da plantação">
+    </section>
+
+    <section class="propriedade" title="Propriedade onde está a plantação">
+      <label for="propriedade">Propriedade</label> <br>
+      <select name="propriedade" id="propriedade">
+        <option value="">Escolha a propriedade</option>
+      </select>
+    </section>
+
+  </section>
+  <section class="trabalhador">
+    
+  </section>
+
+  <section class="area">
+    
+  </section>
+
+  <section class="cultura">
+    
+  </section>
+
+  <section class="gastos">
+    <h3>GASTOS<button class="adicionar" type="button"><span class="material-icons">add</span></button></h3>
+    <section class="headers">
+      <span style="width: 40px;"></span>
+      <span style="width: 200px;">Valor em R$</span>
+      <span style="width: 200px;">O que foi comprado</span>
+    </section>
+    <section class="dados">
+      <input accept="image/png, image/jpeg" type="file" name="upload-fotos[]" multiple class="upload-files" hidden>
+      <button type="button" class="upload-fotos"><span class="material-icons">add_a_photo
+        </span></button>
+
+      <input onkeypress="return event.charCode >= 48 && event.charCode <= 57" type="text" name="valor" class="valor dadoIMG"
+        info="Data da Compra" placeholder="Valor em R$">
+      <input type="text" name="descricao" class="descricao  dadoIMG" info="O que foi comprado" placeholder="O que foi comprado">
+    </section>
+  </section>
+
+
+
+  <section class="datas">
+    <h3>EVENTOS<button class="adicionar" type="button"><span class="material-icons">add</span></button></h3>
+    <section class="headers">
+      <span style="width: 40px;"></span>
+      <span style="width: 200px;">Data</span>
+      <span style="width: 200px;">O que aconteceu nesta data</span>
+    </section>
+    <section class="dados">
+      <input accept="image/png, image/jpeg" type="file" name="upload-fotos[]" multiple class="upload-files" hidden>
+      <button type="button" class="upload-fotos"><span class="material-icons">
+          add_a_photo
+        </span></button>
+
+      <input type="text" name="data" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+        onkeyup="mascara_data(this, this.value)" maxlength="10" class="data dadoIMG" info="Data"
+        placeholder="Ex: 12/11/2020">
+      <input type="text" name="evento" class="evento  dadoIMG" info="O que aconteceu" placeholder="O que aconteceu nesta data">
+    </section>
+  </section>
+
+  <section class="colheitas">
+    <h3>COLHEITA<button class="adicionar" type="button"><span class="material-icons">add</span></button></h3>
+
+    <section class="headers">
+      <span style="width: 40px;"></span>
+      <span style="width: 200px;">Data</span>
+      <span style="width: 200px;">Quanto foi ganho em R$</span>
+    </section>
+    <section style="display: none;">
+      <section class="dados">
+        <input accept="image/png, image/jpeg" type="file" name="upload-fotos[]" multiple class="upload-files"
+          hidden>
+
+        <button type="button" class="upload-fotos">
+          <span class="material-icons">
+            add_a_photo
+          </span></button>
+        <input type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57"
+          onkeyup="mascara_data(this, this.value)" maxlength="10" name="data" info="Data da colheita" class="data dadoIMG" info="Colheita"
+          placeholder="Ex: 12/11/2020">
+        <input type="text" name="valor" class="valor dadoIMG" info="Quanto foi ganho" placeholder="Quanto foi ganho em R$">
+      </section>
+    </section>
+  </section>
+
+  
+</form>
+</section>
+
+<section class="ver-imagens">
+<div class="img">
+</div>
+<div class="controles">
+  <button type="button" class="previous btC"><i class="fas fa-angle-left"></i></button>
+  <button type="button" class="next btC"><i class="fas fa-angle-right"></i></button>
+</div>
+<div class="funcoes">
+  <i class="fas fa-trash-alt"></i>
+  <i class="fas fa-times">&times;</i>
+</div>
+</section>

@@ -1,0 +1,281 @@
+button {
+  font-size: 1.2rem;
+}
+
+.bt-detail {
+  background-color: #00e00b;
+  color: #fff;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  width: 150px;
+  height: 40px;
+}
+
+.bt-detail a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.bt-detail:hover {
+  background-color: #58f160;
+}
+
+.bt-control {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  display: none;
+}
+
+.bt-previous, .bt-next {
+  position: absolute;
+  border-radius: 50%;
+  font-size: 40px;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.bt-previous {
+  left: 0;
+}
+
+.bt-next {
+  right: 0;
+}
+
+.bt-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  right: 10px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 4rem;
+  color: rgb(0, 102, 255);
+  text-shadow: 0 0 3px rgb(72, 146, 241);
+  cursor: pointer;
+  box-shadow: 0 0 5px black;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.bt-add:hover {
+  background-color: #ebebeb;
+  border-color: #ebebeb;
+}
+
+.bt-add:active {
+  background-color: #fff;
+  border: 5px solid white;
+}
+
+.bt-action {
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 5px 5px 0;
+}
+
+.bt-action-view {
+  background-color: #00e00b;
+}
+
+.bt-action-view:hover {
+  background-color: #34ec3d;
+}
+
+.bt-action-edit {
+  background-color: #00a0e0;
+}
+
+.bt-action-edit:hover {
+  background-color: #28b9f3;
+}
+
+.bt-add-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  margin-left: 3px;
+  border: 2px solid #006eff;
+  border-radius: 5px;
+  color: #006eff;
+  cursor: pointer;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+}
+
+.bt-add-field:hover {
+  color: #ffffff;
+  background-color: #006eff;
+}
+
+.bt-add-field:active {
+  box-shadow: 0 0 10px black;
+}
+
+.bt-remove-field {
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 5px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 5px 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.bt-remove-field:hover {
+  color: #ffffff;
+  background-color: #000;
+}
+
+.bt-remove-field:active {
+  box-shadow: 0 0 10px black;
+}
+
+.bt-add-img {
+  position: relative;
+  border: 2px solid #f80000;
+  border-radius: 5px;
+  color: #fc0202;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 5px 10px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bt-add-img:hover {
+  color: #ffffff;
+  background-color: #f80000;
+}
+
+.bt-add-img:active {
+  box-shadow: 0 0 10px black;
+}
+
+.bt-view-imgs {
+  border: 3px solid #0057f8;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #00000000;
+  color:#0057f8;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bt-view-imgs:hover {
+  background-color: #0057f8;
+  color: #fff;
+}
+
+.bt-cancel {
+  border: 3px solid #ff0000;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #00000000;
+  color: #ff0000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bt-cancel:hover {
+  background-color:#ff0000;
+  color: #fff;
+}
+
+.bt-save {
+  border: 3px solid #30ee00;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #00000000;
+  color: #30ee00;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+.bt-save:hover {
+  background-color:#30ee00;
+  color: #fff;
+}
+
+.bt-action-delete, .bt-action-close{
+  position: relative;
+  border: none;
+  background: none;
+  color: #cecece;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 20px;
+  z-index: 5;
+}
+.bt-action-delete, .bt-action-close {
+  color: #ff0000;
+}
+
+@media only screen and (max-width: 600px) {
+  .bt-add-img {
+    flex: 100%;
+
+  }
+
+  .bt-remove-field {
+    flex: 100%;
+  }
+
+  .bt-view-imgs {
+    flex: 100%;
+    height: 40px;
+  }
+}
+
+.bt-more-options {
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0.4rem;
+  transition: all 0.2s;
+}
+
+.bt-more-options:hover {
+  background-color: #a0a0a033;
+}
+
+.bt-more-options:active {
+  background-color: #c4c3c333;
+}

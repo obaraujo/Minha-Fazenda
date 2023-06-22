@@ -1,0 +1,22 @@
+const express = require('express')
+const server = express()
+const path = require('path')
+const pages = require('./pages')
+
+server
+  .use(express.static(__dirname.replace('/src', '/public')))
+  .use(express.urlencoded({ extended: true }))
+  .set('views', path.join(__dirname, 'views'))
+  .set('view options', { layout: '/layout/main' })
+  .set('view engine', 'hbs')
+  .get('/', pages.index)
+  .get('/home', pages.home)
+  .get('/properties', pages.properties)
+  .get('/plantations', pages.plantations)
+  .get('/animals', pages.animals)
+  .get('/people', pages.people)
+  .get('/finance', pages.finance)
+  .get('/calculator', pages.calculator)
+  .get('/equipments', pages.equipments)
+  
+server.listen(8000)

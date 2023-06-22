@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Minha Fazenda</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      position: fixed;
+      background-color: #444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .login {
+      position: absolute;
+      width: 30%;
+      background-color: #fff;
+      border-radius: 30px;
+      padding: 40px;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+    }
+
+    label {
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .botoes {
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      width: 150px;
+      height: 40px;
+      border-radius: 10px;
+      font-weight: bold;
+      background-color: #fff;
+      position: absolute;
+    }
+
+    button[type="submit"] {
+      color: #15a1ff;
+      border: 2px solid #15a1ff;
+      right: 0;
+      margin-right: 40px;
+    }
+
+    button[type="submit"]:hover {
+      color: #fff;
+      background-color: #15a1ff;
+
+    }
+
+    button[cadastro] {
+      color: #ff9100;
+      border: 2px solid#ff9100;
+    }
+
+    button[cadastro]:hover {
+      color: #fff;
+      background-color: #ff9100;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="login">
+    <h1>LOGIN</h1>
+    <form action="/login" method="post">
+      <label for="nome">Nome</label><br>
+      <input type="text" name="nome" id="nome"> <br>
+      <label for="senha">Senha</label><br>
+      <input type="password" name="senha" id="senha"> <br>
+      <div class="botoes">
+        <a href="/cadastro"><button type="button" cadastro>Cadastrar</button></a>
+        <button type="submit">Entrar</button></div>
+    </form>
+  </section>
+</body>
+
+</html>

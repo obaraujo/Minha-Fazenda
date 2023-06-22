@@ -1,0 +1,159 @@
+.list {}
+
+.list-item {
+  margin-top: 10px;
+  height: 60px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  white-space: nowrap;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: all 0.5s;
+}
+
+.list-col-4 {
+  grid-template-columns: 5rem 10rem 10rem 150px;
+}
+
+.list-col-7 {
+  grid-template-columns: 5rem 10rem 10rem 10rem 10rem 10rem 300px;
+}
+
+.list-item:hover {
+  background-color: #ffffff;
+  box-shadow: 0 0 5px black;
+}
+
+.list-item img {
+  border-radius: 50%;
+  background-color: rgb(17, 93, 255);
+  width: 50px;
+  height: 50px;
+}
+
+.list-item .actions {
+  background-color: #006eff00;
+  color: black;
+}
+
+.item {
+  display: grid;
+  grid-template-rows: [r1] 1.3rem [r2];
+}
+
+.item-title {
+  grid-row: r1;
+  height: 50px;
+  border-collapse: collapse;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+  font-weight: bold;
+  display: grid;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.item-title span {
+  line-height: 55px;
+  height: 55px;
+  margin: 0 5px 0 5px;
+}
+
+.item-value {
+  grid-row: r2;
+}
+
+.more-options-list-item {
+  position: relative;
+}
+
+.options-list-item {
+  position: absolute;
+  right: 0;
+  width: 15rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  z-index: 10;
+  background-color: #fff;
+  box-shadow: 0 0 0.3rem black;
+}
+
+.item-option-list {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+.icon-option-list-item {
+  margin: auto 1rem;
+}
+
+.options-list-item .text-option-list-item {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.options-list-item span:hover {
+  background-color: #e4e4e4;
+}
+
+.options-list-item span:active {
+  background-color: #f5f5f5;
+}
+
+.options-list-item hr {
+  width: 100%;
+  height: 0.1rem;
+  background-color: #3b3b3b;
+  border: none;
+}
+
+.options-add-item {
+  display: none;
+}
+
+.options-add-item.open {
+  display: block;
+  animation-name: options-add-animate;
+  animation-duration: 0.4s;
+}
+
+.item-option-add-list {
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.arrow {
+  margin: auto 1rem;
+  transition: all 0.4s;
+}
+
+.open-add-options .arrow-menu {
+  transform: rotateX(180deg);
+}
+
+@keyframes options-add-animate {
+  from {
+    height: 0rem;
+  }
+  to {
+    height: auto;
+  }
+}

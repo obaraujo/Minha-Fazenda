@@ -1,0 +1,17 @@
+{
+  "name": "minhafazenda",
+  "version": "1.0.0",
+  "description": "Gerenciamento de Fazenda",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "author": "Vinícius Araújo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "jquery": "^3.5.1",
+    "nodemon": "^2.0.20"
+  }
+}

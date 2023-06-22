@@ -1,0 +1,147 @@
+.body-form-register {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00000048;
+  width: 100%;
+  padding: 20px;
+  z-index: 10;
+}
+
+.form-register {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px black;
+  border-radius: 15px;
+  background-color: #fff;
+  font-size: 1.5rem;
+  padding: 30px;
+  width: 80%;
+}
+
+.title-section-form {
+  text-transform: uppercase;
+}
+
+.section-form {
+  margin: 10px 8px
+}
+
+.field {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.field-input {
+  border: none;
+  background-color: rgb(207, 207, 207);
+  border-radius: 5px;
+  padding-left: 5px;
+  box-sizing: border-box;
+  flex: 25%;
+  height: 40px;
+  margin: 5px;
+}
+
+.field-input:focus {
+  background-color: #fff;
+  border: 2px solid rgb(63, 63, 63);
+}
+
+.select-box {
+  display: flex;
+  flex-direction: column;
+  flex: 25%;
+  position: relative;
+  margin: 5px;
+}
+
+.field-select {
+  display: flex;
+  background-color: #cecdcd;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  height: 100%;
+  position: relative;
+  order: 0;
+}
+
+.field-select::after {
+  content: "";
+  background: url('../images/arrow_down.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100%;
+  width: 32px;
+  right: 10px;
+  top: 5px;
+  transition: all 0.4s;
+}
+
+.options-container {
+  background-color: #a7a7a7;
+  color: #fff;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 8px;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+
+  order: 1;
+}
+
+.select-box .options-container.active {
+  max-height: 150px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.select-box .options-container.active+.field-select::after {
+  transform: rotateX(180deg);
+  top: -6px;
+}
+
+.select-box .option, .field-select {
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.select-box .option:hover {
+  background-color: #8f8f8f;
+}
+
+.select-box label {
+  cursor: pointer;
+}
+
+.select-box .option .radio {
+  display: none;
+}
+
+.field-textarea {
+  flex: 100%;
+  padding: 10px 10px;
+}
+
+.field-break {
+  flex-basis: 100%;
+}
+
+.field-action {
+  grid-column: col1 / col4;
+  display: flex;
+  justify-content: right;
+}
+

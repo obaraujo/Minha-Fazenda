@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Signika;
+    src: url('../_fontes/Signika/Signika-SemiBold.ttf')
+}
+
+
+div#img{
+    position: absolute;
+    right: 3vw;
+    top: 8vw;
+    border-radius: 5px 5px 10px 10px;
+    background-color: rgb(31, 29, 29);
+    margin-bottom: 10px;
+    width: 17vw;
+    height: 16vw;
+    
+}
+
+
+div#formulario {
+    position: relative;
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    border-radius: 1vw;
+    padding: 2.5vw;
+    font-size: 1.05vw;
+    margin-top: 8vw;
+    box-shadow: 0px 0px 7px black;
+    
+}
+
+div#informacoes {
+    width: 40vw;
+}
+
+h2#cabecaloform{
+    margin-top: 10px;
+    text-align: center;
+    font-family: Signika;
+    font-size: 5vh;
+}
+
+
+.titulo {
+    margin-top: 100px;
+    font-size: 1.4vw;
+    font-weight: bolder;
+    font-family: Helvetica, sans-serif;
+}
+
+label {
+    font-family: Ubuntu, Cantarell, sans-serif;
+    font-size: 1.2vw;
+}
+
+p.info {
+    font-size: 1vw;
+    margin: 0px;
+    opacity: 60%;
+    font-family:  Arial, sans-serif;
+}
+
+input[type=text], input[type=number], input[type=date]{
+    border: 1px solid rgba(36, 36, 36, 0.719);
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px rgba(10, 10, 10, 0.397);
+    height: 2vw;
+    width: 28vw;
+    padding-left: 5px;
+    margin: 5px 0px;
+}
+
+
+#salvar {
+    cursor: pointer;
+    border: 0px;
+    border-radius: 1vw;
+    color: rgb(241, 241, 241);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    width: 8.5vw;
+    height: 2.5vw;
+    position: absolute;
+    right: 1vw;
+    bottom: 1vw;
+    background-color: rgb(255, 115, 0);
+}
+
+#salvar:hover {
+    font-size: 1.2vw;
+    background-color: orangered;
+}
+
+select {
+    cursor: pointer;
+    background-color: rgb(0, 119, 255);
+    border: 0px;
+    border-radius: 0.4vw;
+    color: rgb(243, 236, 236);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    height: 2vw;
+}

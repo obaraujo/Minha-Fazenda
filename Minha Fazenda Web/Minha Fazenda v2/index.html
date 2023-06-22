@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Minha Fazenda</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/css/index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" href="/files/images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html">
+      <h1>Minha Fazenda</h1>
+    </a>
+  </header>
+
+  <!--Botões de opção-->
+
+  <section class="navegacao">
+    <section id="dropdown">
+      <button class="bnav"> Cadastrar +</button>
+      <section id="opcoes">
+        <button mostra class="cadastro" id="cadastroD">Cadastrar Proprietário</button>
+        <button mostra class="cadastro" id="cadastroP">Cadastrar propriedade</button>
+        <button mostra class="cadastro" id="cadastroA">Cadastrar animal</button>
+        <button mostra class="cadastro" id="cadastroP">Cadastrar plantação</button>
+      </section>
+    </section>
+    <button mostra class="bnav">Consultar</button>
+  </section>
+
+
+  <nav class="topnav">
+    <ul type="none">
+      <li><a href="https://www.youtube.com/channel/UCkKRuLv81NfF84Dwu3Bkr5g" target="_blank"
+          rel="noopener noreferrer"><img src="files/images/logoyoutube.png" style="width:20px;" /> Canal
+          Trabalho rural</a></li>
+      <li><a href="https://www.youtube.com/channel/UCf8WEcWOMBIWWurl-OM4A1w" target="_blank"
+          rel="noopener noreferrer"><img src="files/images/logoyoutube.png" style="width:20px;" /> Canal
+          Tech Vini</a></li>
+      <li><a href="http://techviniba.blogspot.com" target="_blank" rel="noopener noreferrer"><img
+            src="files/images/logotechvini.png" style="width:20px; display: inline-flex; align-items: center;" /> Site
+          Tech Vini</a></li>
+    </ul>
+  </nav>
+
+
+  <section>
+    <!--Formulários de cadastro-->
+
+    <section class="cadastro">
+
+      <!-- Cadastro de donos -->
+
+      <section popup id="proprietario">
+        <form action="/cadastrodono" class="form animacao" method="post">
+          <section class="cabecalho">
+            <span fecha class="fechar" title="Fechar">&times;</span>
+            <h2>Cadastro de proprietário(a)</h2>
+          </section>
+
+          <section class="opcoes">
+            <label for="nomeDono">Nome</label>
+            <input entrada class="dados" type="text" name="nome" id="nomeDono" required><br>
+
+            <label class="label" for="nascimento">Data de nascimento</label>
+            <input entrada class="dados" type="date" name="nascimento" id="datadenascimento">
+
+            <button class="cancelar" cancelar type="button">Cancelar</button>
+            <button reset class="cancela" type="reset" hidden></button>
+            <button class="salvar" type="submit">Salvar</button>
+          </section>
+        </form>
+      </section>
+
+      <!--Formulário de cadastro da propriedade-->
+
+      <section popup id="propriedade">
+
+        <form action="/cadastropropriedade" class="form animacao" method="POST">
+          <section class="cabecalho">
+            <span fecha class="fechar" title="Fechar">&times;</span>
+            <h2>Cadastro propriedade</h2>
+          </section>
+
+          <section class="opcoes">
+            <label for="nome">Nome da propriedade</label>
+            <input entrada class="dados" type="text" name="nome" id="nomePropriedade" required><br>
+
+            <label for="tamanho">Tamanho</label>
+            <input entrada class="dados" type="number" name="tamanho" id="tamanho" required><br>
+            <label for="tipodemedida">A área informada está em:</label>
+            <select name="medida">
+              <option value="Ha">Hectares (ha)</option>
+              <option value="M²">Metros quadrados (m²)</option>
+            </select> <br>
+
+            <label for="DonoP">Quem é o dono?</label>
+            <select dono name="dono" id="DonoP">
+              <option value="">Escolha do dono</option>
+            </select>
+
+            <br>
+
+            <button class="cancelar" cancelar type="button">Cancelar</button>
+            <button reset class="cancela" type="reset" hidden></button>
+            <button class="salvar" type="submit">Salvar</button>
+          </section>
+        </form>
+      </section>
+    </section>
+
+    <!--Formulário de cadastro animal-->
+
+    <section popup id="animal">
+
+      <form action="/cadastroanimal" class="form animacao" method="post">
+        <section class="cabecalho">
+          <span fecha class="fechar" title="Fechar">&times;</span>
+          <h2>Cadastro animal</h2>
+        </section>
+
+        <section class="opcoes">
+          <label class="label" for="nome">Nome do animal</label>
+          <input entrada class="dados" type="text" name="nome" id="nomeA" required> <br />
+
+          <label class="label">Sexo</label>
+          <input entrada class="dados" type="radio" name="sexo" id="sexom" value="Macho"> <label
+            for='sexom'>Macho</label>
+          <input entrada class="dados" type="radio" name="sexo" id="sexof" value="Fêmea"> <label
+            for='sexof'>Fêmea</label><br>
+
+          <label class="label" for="nascimento">Data de nascimento</label>
+          <input entrada naosei class="dados" type="date" name="nascimento" id="datadenascimento">
+
+          <input entrada naoseiclick class="dados" type="checkbox" name="naosei" id="naoseidn">
+          <label for="naoseidn">Não sei</label><br>
+
+          <label class="label" for="nomeMae">Nome da mãe</label>
+          <input entrada naosei class="dados" type="text" name="nomeMae" id="nomedamae">
+
+          <input entrada naoseiclick class="dados" type="checkbox" name="naosei" id="naoseiNM">
+          <label for="naoseiNM">Não sei</label> <br />
+
+          <label class="label" for="nomePai">Nome do pai</label>
+          <input entrada naosei class="dados" type="text" name="nomePai" id="nomedopai">
+
+          <input entrada naoseiclick class="dados" type="checkbox" name="naosei" id="naoseiNP">
+          <label for="naoseiNP">Não sei</label> <br />
+
+          <label for="DonoA">Quem é o dono?</label>
+          <select dono name="dono" id="DonoA">
+            <option value="naotem">Não tem</option>
+          </select>
+
+          <br>
+          <button cancelar class="cancelar" type="button">Cancelar</button>
+          <button reset class="cancela" type="reset" hidden></button>
+          <button class="salvar" type="submit">Salvar</button>
+        </section>
+      </form>
+    </section>
+
+    <!--Formulário de cadastro Platação-->
+
+    <section popup id="plantacao">
+
+      <form action="/cadastroplantacao" class="form animacao" method="post">
+        <section class="cabecalho">
+          <span fecha class="fechar" title="Fechar">&times;</span>
+          <h2>Cadastro Plantação</h2>
+        </section>
+
+        <section class="opcoes">
+          <label for="nome">Nome da plantação</label>
+          <input entrada class="dados" type="text" name="nome" id="nomeP" required> <br>
+
+          <label for="datadeplantio">Data de plantio</label>
+          <input entrada class="dados" type="date" name="dataPlantio" id="dataPlantio" required><br>
+
+          <label for="cultura">Cultura</label>
+          <input entrada class="dados" type="text" name="cultura" id="cultura" required><br>
+
+          <label for="areaplantada">Área plantada</label>
+          <input entrada class="dados" type="number" name="areaPlantada" id="areaplantada" required>
+
+          <br>
+
+          <label for="donoPl">Quem são os responsáveis da roça? </label>
+          <input entrada class="dados" type="text" name="donosPl" id="donosPl" required>
+
+          <br>
+
+          <label for="donoDaTerra">Quem é o dono da terra?</label>
+          <select dono name="donoDaTerra" id="donoDaTerra">
+            <option value="naotem">Não tem</option>
+          </select>
+
+          <br>
+
+          <label for="nPropriedade">Propriedade</label>
+          <select propriedade name="propriedade" id="propriedade">
+            <option opcoesP value="">Escolha um dono</option>
+          </select>
+
+          <br>
+
+          <button cancelar class="cancelar" type="button">Cancelar</button>
+          <button reset class="cancela" type="reset" hidden></button>
+          <button class="salvar" type="submit">Salvar</button>
+        </section>
+      </form>
+    </section>
+
+  </section>
+
+  <!--Consular dados-->
+
+  <section popup id="consulta">
+    <section consulta class="animacao">
+      <section class="cabecalho">
+        <span fecha class="fechar">&times;</span>
+        <h2>Consultar</h2>
+      </section>
+
+      <form action="/consultar" method="GET">
+        <section class="opcoes">
+          <label for="nome">Digite o nome </label><br>
+          <input entrada type="text" name="procurar" id="nome" list="procura">
+          <button id="procurar" type="submit">Procurar</button>
+          <datalist id="procura">
+            <option value="Fazenda"></option>
+            <option value="Fazenda"></option>
+            <option value="Fazenda"></option>
+            <option value="Fazenda"></option>
+          </datalist>
+        </section>
+      </form>
+      <section tabela>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Propriedades</th>
+              <th>Animais</th>
+              <th>Plantações</th>
+            </tr>
+          </thead>
+          <tbody corpoDaTabela>
+            
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </section>
+
+
+  </section>
+
+  <footer>
+    <span><a href="https://techviniba.blogspot.com/">Tech Vini</a></span>
+    <p>Plataforma desenvolvida por <strong><sup>&copy;</sup>Vinícius Araújo</strong></p>
+  </footer>
+
+
+  <!--Scripts-->
+
+  <script src="/JavaScript/scripts.js"></script>
+
+</body>
+
+</html>

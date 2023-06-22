@@ -1,0 +1,24 @@
+.picture>section:hover .botao-controle {
+  display: flex;
+  animation-name: fade-in;
+  animation-duration: .5s;
+  opacity: 100%;
+}
+
+@keyframes fade-in {
+  from {
+      opacity: .4
+  }
+  to {
+      opacity: 1
+  }
+}
+
+@keyframes fade-out {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0;
+  }
+}

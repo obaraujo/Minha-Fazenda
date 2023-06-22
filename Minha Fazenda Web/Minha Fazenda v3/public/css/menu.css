@@ -1,0 +1,226 @@
+.side-menu {
+  position: absolute;
+  background-color: #333;
+  width: 280px;
+  height: 100vh;
+  left: 0;
+  transition: all 0.5s;
+  z-index: 11;
+}
+
+.close-menu {
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+  font-weight: bold;
+  color: #e2e2e2;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.close-menu:hover {
+  color: #bbbbbb;
+}
+
+.side-menu>span:hover {
+  color: #f8f8f8;
+}
+
+.material-icons.open-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.info-producer {
+  background-color: #222;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.perfil-img {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name-producer {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.options-menu {
+  max-height: 60vh;
+  overflow-y: auto;
+  border-bottom: 1px solid #fff;
+}
+
+.options-menu a {
+  display: flex;
+  align-items: center;
+  font-family: 'Secular One', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  height: 6rem;
+  font-size: 1.5rem;
+}
+
+.options-menu a .label {
+  margin: 0 2rem;
+}
+
+.options-menu a:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+.copy-right {
+  position: absolute;
+  padding: 5px;
+  text-align: center;
+  bottom: 5px;
+  font-size: 15px;
+  color: #fff;
+}
+
+header.title-logo {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 280px;
+  background-color: #222;
+  color: #fff;
+  padding-left: 1rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s;
+  font-size: 2rem;
+}
+
+header.title-logo h1 {
+  margin-left: 1.5rem;
+}
+
+.active-option {
+  background-color: #616161;
+  padding-left: 0;
+}
+
+.bar {
+  position: relative;
+  opacity: 0;
+  width: 1rem;
+  height: 100%;
+  left: 0;
+  background-color: #00e00b;
+}
+
+.active-option .bar {
+  opacity: 1;
+  margin: 0 1rem 0 0;
+}
+
+.min-menu {
+  margin-top: 6rem;
+  width: 6rem;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  transition: all 0.5s;
+}
+
+.min-menu .active-option .bar {
+  width: 0.5rem;
+  margin: 0 01rem 0 0;
+}
+
+.min-menu hr {
+  display: none;
+}
+
+.open-menu {
+  display: none;
+}
+
+.open-menu img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.min-menu .info-producer {
+  background: none;
+  padding-top: 0;
+}
+
+.min-menu .open-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 7rem;
+  background-color: #222;
+}
+
+.min-menu .open-menu img {
+  position: relative;
+  width: 3.5rem;
+  top: calc((7rem - 3.5rem) / 2);
+  left: calc((100% - 3.5rem) / 2);
+}
+
+.min-menu .bt-action {
+  opacity: 0;
+  transition: all 0.5s;
+  display: none;
+}
+
+.min-menu .close-menu {
+  display: none;
+}
+
+.min-menu .perfil-img {
+  width: 4.4rem;
+  height: 4.4rem;
+  margin: 1rem 0;
+}
+
+.min-menu .name-producer {
+  display: none;
+}
+
+.min-menu .options-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  max-height: 70vh;
+  overflow-y: hidden;
+}
+
+.min-menu .options-menu a {
+  display: flex;
+  align-items: center;
+  width: 6rem;
+}
+
+.min-menu .options-menu a .label {
+  display: none;
+}
+
+.min-menu .copy-right {
+  display: none;
+}

@@ -1,0 +1,131 @@
+<section class="body-form-register">
+  <form action="/register-[nome do registro]" class="form-register" method="POST">
+    <section class="section-form">
+      <h1 class="title-section-form">Nome</h1>
+      <section class="field">
+        <input required  autocomplete="off" class="field-input" type="text" name="nome" id="nome" placeholder="Nome da plantação">
+
+
+        <div class="select-box">
+
+          <div class=" options-container ">
+
+            <div class="option">
+              <label for="name1">Nome da propriedade 1</label>
+              <input required  autocomplete="off" type="radio" name="properties" class="radio" id="name1">
+            </div>
+            
+          </div>
+
+          <div class="field-select" name="propriedade" id="propriedade">
+            Escolha a propriedade
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="section-form">
+      <h3 class="title-section-form">Trabalhador(es)<button class="bt-add-field" type="button"><i
+            class='fas fa-plus'></i></button></h3>
+      <section class="field">
+        <input required  autocomplete="off" class="field-input" type="text" name="trabalhador" id="trabalhador" placeholder="Nome do trabalhador">
+        <button class="bt-remove-field" type="button"><i class='fas fa-times'></i></button>
+      </section>
+    </section>
+
+    <section class="section-form">
+      <h3 class="title-section-form">Cálculo da área</h3>
+      <section class="field">
+        <input required  autocomplete="off" class="field-input" type="text"
+          name="comprimento" id="comprimento" placeholder="Comprimento em metros">
+        <input required  autocomplete="off" class="field-input" type="text"
+          name="largura" id="largura" placeholder="Largura em metros">
+        <button class="bt-remove-field" type="button"><i class='fas fa-times'></i></button>
+      </section>
+    </section>
+
+    <section class="section-form">
+      <h3 class="title-section-form">Cultura plantada</h3>
+      <section class="field">
+        <input required  autocomplete="off" accept="image/png, image/jpeg" type="file" name="upload-fotos[]" multiple class="upload-files" hidden>
+
+        <button class="bt-add-img plus" type="button"><span class="material-icons">add_a_photo</span></button>
+        <input required  autocomplete="off" class="field-input" type="text" id="nome" placeholder="Nome">
+        <input required  autocomplete="off" class="field-input numbers" type="text" id="comprimentoM" placeholder="Comprimento das leiras">
+        <input required  autocomplete="off" class="field-input numbers" type="text" id="espacamentoL" placeholder="Espaçamento entre leiras">
+        <input required  autocomplete="off" class="field-input numbers" type="text" id="espacamentoP" placeholder="Espaçamento entre plantas">
+        <button class="bt-remove-field" type="button"><i class='fas fa-times'></i></button>
+
+      </section>
+    </section>
+
+    <section class="section-form">
+      <h3 class="title-section-form">GASTOS <button class="bt-add-field" type="button"><i
+            class='fas fa-plus'></i></button>
+      </h3>
+      <section class="field">
+        <input required  autocomplete="off" accept="image/png, image/jpeg" type="file" name="upload-fotos[]" multiple class="upload-files" hidden>
+        <button class="bt-add-img plus " type="button"><span class="material-icons">add_a_photo</span></button>
+        <input required  autocomplete="off" class="field-input plus date numbers" type="text" placeholder="Data" maxlength="10" minlength="8" required>
+        <input required  autocomplete="off" class="field-input plus" id="culture" type="text" placeholder="Valor em R$">
+        <input required  autocomplete="off" class="field-input plus" id="culture-obs" type="text" placeholder=" O que foi comprado">
+        <button class="bt-remove-field" type="button"><i class='fas fa-times'></i></button>
+
+      </section>
+    </section>
+    <section class="section-form">
+      <h3 class="title-section-form">EVENTOS <button class="bt-add-field" type="button"><i
+            class='fas fa-plus'></i></button>
+      </h3>
+      <section class="field">
+        <input required  autocomplete="off" accept="image/png, image/jpeg" type="file" name="upload-fotos[]" multiple class="upload-files" hidden>
+        <button class="bt-add-img plus" type="button"><span class="material-icons">add_a_photo</span></button>
+        <input required  autocomplete="off" class="field-input plus date numbers" type="text" placeholder="Data" maxlength="10" minlength="8" required>
+        <input required  autocomplete="off" class="field-input plus" id="culture-obs" type="text" placeholder="O que aconteceu nesta data">
+        <button class="bt-remove-field" type="button"><i class='fas fa-times'></i></button>
+
+      </section>
+    </section>
+
+    <section class="section-form">
+      <h3 class="title-section-form">COLHEITA <button class="bt-add-field" type="button"><i
+            class='fas fa-plus'></i></button>
+      </h3>
+      <section class="field">
+        <input required  autocomplete="off" accept="image/png, image/jpeg" type="file" name="upload-fotos[]" multiple class="upload-files" hidden>
+
+
+        <button class="bt-add-img plus" type="button"><span class="material-icons">add_a_photo</span></button>
+        <input required  autocomplete="off" class="field-input plus date numbers" type="text" placeholder="Data" maxlength="10" minlength="8" required>
+        
+        <input required  autocomplete="off" class="field-input plus" id="culture-obs" type="text" placeholder="Quanto foi ganho em R$">
+        <button class="bt-remove-field" type="button"><i class='fas fa-times'></i></button>
+      </section>
+
+    </section>
+    <section class="section-form">
+      <h3 class="title-section-form">Observações</h3>
+      <section class="field">
+        <textarea class="field-textarea field-input" name="culture-obs" id="" cols="30" placeholder="Observações"
+          rows="10"></textarea>
+
+      </section>
+    </section>
+    <section class="section-form">
+
+      <section class="field">
+        <button class="bt-view-imgs" type="button" id="ver-fotos"><i class="fas fa-image"></i> Ver fotos</button>
+      </section>
+    </section>
+
+    <section class="field-action">
+      <button class="bt-cancel" type="reset">Cancelar</button>
+      <button class="bt-save" type="submit"><i class="fas fa-save"></i> Salvar</button>
+    </section>
+</section>
+</form>
+</section>
+
+
+<script src="../../public/scripts/custom-select.js"></script>
+<script src="../../public/scripts/forms.js"></script>
